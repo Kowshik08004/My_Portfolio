@@ -522,6 +522,12 @@ main {
   gap: 20px;
 }
 
+/* ===== FORCE SERVICE TEXT TO WHITE ===== */
+.service-item-title,
+.service-content-box p {
+  color: #ffffff;
+}
+
 .service-item {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -553,11 +559,6 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
-}
-
-.service-item-title,
-.service-content-box p {
-  color: #ffffff !important;
 }
 
 
