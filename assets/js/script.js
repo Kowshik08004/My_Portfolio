@@ -110,29 +110,25 @@ formInputs.forEach(input => {
   });
 });
 
-/* ==================================================
-   PAGE NAVIGATION (FIXED & CLEAN)
-================================================== */
+// ================= PAGE NAVIGATION =================
 const navLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
 
-    const target = link.textContent.trim().toLowerCase();
+    const target = link.dataset.target;
 
-    // reset all
-    pages.forEach(page => page.classList.remove("active"));
+    // deactivate all
     navLinks.forEach(btn => btn.classList.remove("active"));
+    pages.forEach(page => page.classList.remove("active"));
 
-    // activate selected
-    pages.forEach(page => {
-      if (page.dataset.page === target) {
-        page.classList.add("active");
-      }
-    });
-
+    // activate current
     link.classList.add("active");
+
+    const page = document.querySelector(`[data-page="${target}"]`);
+    if (page) page.classList.add("active");
+
     window.scrollTo(0, 0);
   });
 });
