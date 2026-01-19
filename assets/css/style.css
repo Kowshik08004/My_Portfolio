@@ -1880,3 +1880,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* ===============================
+   FORCE PAGE VISIBILITY (FIX)
+================================ */
+
+.main-content > article {
+  display: none;
+}
+
+.main-content > article.active {
+  display: block;
+}
