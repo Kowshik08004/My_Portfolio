@@ -78,6 +78,34 @@
           </div>
         </li>
       </ul>
+
+      <div class="separator"></div>
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="https://github.com/Kowshik08004" target="_blank" rel="noopener noreferrer" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
     </div>
 
   </aside>
@@ -89,8 +117,10 @@
     <nav class="navbar">
       <ul class="navbar-list">
         <li class="navbar-item"><button class="navbar-link active" data-nav-link data-target="about">About</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="resume">Resume</button></li>
-        <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="portfolio">Portfolio</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="resume">Education</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="portfolio">Projects</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="research">Research</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="certifications">Certifications</button></li>
         <li class="navbar-item"><button class="navbar-link" data-nav-link data-target="contact">Contact</button></li>
       </ul>
     </nav>
@@ -102,71 +132,508 @@
       <section class="about-text">
         <p>
           I'm Kowshik Chowdhury, an undergraduate student in Electronics and Telecommunication Engineering
-          (Level 3, Term II) at CUET.
-        </p>
-
-        <p>
-          I specialize in combining electronics, software, and systems thinking to build practical engineering solutions.
-        </p>
-
-        <p>
-          My interests include semiconductor device design and cybersecurity, with a focus on turning ideas into
-          working systems.
+          (Level 3, Term II) at Chittagong University of Engineering & Technology (CUET). I specialize in combining electronics, software, and systems thinking to build practical engineering solutions
+          that make a real-world impact. My interests include semiconductor device design and cybersecurity, with a strong focus on turning innovative
+          ideas into working systems and tangible results.
         </p>
       </section>
 
       <section class="service">
         <h2 class="h2 article-title">Technical Skills</h2>
-        <ul class="service-list">
-          <li class="service-item">
+        <ul class="service-list skills-grid">
+          <li class="service-item skill-card">
+            <div class="skill-icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
             <div class="service-content-box">
               <h3 class="service-item-title">Programming Languages</h3>
-              <p>C, C++, Python, HTML, CSS, JavaScript, PHP, MySQL, LaTeX</p>
+              <div class="skill-tags">
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">LaTeX</span>
+              </div>
             </div>
           </li>
 
-          <li class="service-item">
+          <li class="service-item skill-card">
+            <div class="skill-icon-box">
+              <ion-icon name="construct-outline"></ion-icon>
+            </div>
             <div class="service-content-box">
               <h3 class="service-item-title">Tools & Software</h3>
-              <p>Proteus, ADS 2021, MATLAB, VS Code, XAMPP</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Proteus</span>
+                <span class="skill-tag">ADS 2021</span>
+                <span class="skill-tag">MATLAB</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">XAMPP</span>
+              </div>
             </div>
           </li>
 
-          <li class="service-item">
+          <li class="service-item skill-card">
+            <div class="skill-icon-box">
+              <ion-icon name="bulb-outline"></ion-icon>
+            </div>
             <div class="service-content-box">
               <h3 class="service-item-title">Focus Areas</h3>
-              <p>Embedded Systems, Web Development, Semiconductor Design, Cybersecurity</p>
+              <div class="skill-tags">
+                <span class="skill-tag">Embedded Systems</span>
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">Semiconductor Design</span>
+                <span class="skill-tag">Cybersecurity</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Download CV Button -->
+      <section class="about-text" style="text-align: center; margin-top: 2rem;">
+        <a href="assets/CV.pdf" target="_blank" rel="noopener noreferrer" class="form-btn" id="downloadCVBtn" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; max-width: 250px;">
+          <ion-icon name="download-outline"></ion-icon>
+          <span>Download CV</span>
+        </a>
+      </section>
+    </article>
+
+    <!-- RESUME -->
+    <article class="resume" data-page="resume">
+      <header><h2 class="h2 article-title">Education</h2></header>
+
+      <section class="education-section">
+        <ul class="education-grid">
+
+          <!-- Bachelor's Degree -->
+          <li class="education-card">
+            <div class="education-content">
+              <div class="education-header">
+                <div class="education-icon-wrapper">
+                  <ion-icon name="school-outline"></ion-icon>
+                </div>
+                <div class="education-title-group">
+                  <h3 class="education-title">B.Sc. in Electronics & Telecommunication Engineering</h3>
+                  <div class="education-meta">
+                    <span class="education-institution">
+                      <ion-icon name="business-outline"></ion-icon>
+                      Chittagong University of Engineering & Technology (CUET)
+                    </span>
+                    <span class="education-period">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      2022 – Present (Level 3, Term II)
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="education-description">
+                Currently pursuing a Bachelor's degree with comprehensive coursework in semiconductor device design, embedded systems, telecommunications, and advanced electronics. Maintaining strong academic performance while developing practical skills in modern engineering technologies.
+              </p>
+              <div class="coursework-section">
+                <h4 class="coursework-title">Relevant Coursework</h4>
+                <div class="coursework-tags">
+                  <span class="coursework-tag">Digital Signal Processing</span>
+                  <span class="coursework-tag">Communication Systems</span>
+                  <span class="coursework-tag">Microprocessor & Interfacing</span>
+                  <span class="coursework-tag">Electronic Circuit Design</span>
+                  <span class="coursework-tag">Electromagnetic Theory</span>
+                  <span class="coursework-tag">Control Systems</span>
+                  <span class="coursework-tag">Antenna & Wave Propagation</span>
+                  <span class="coursework-tag">Digital Electronics</span>
+                  <span class="coursework-tag">VLSI Design</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Higher Secondary Certificate -->
+          <li class="education-card">
+            <div class="education-content">
+              <div class="education-header">
+                <div class="education-icon-wrapper">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+                <div class="education-title-group">
+                  <h3 class="education-title">Higher Secondary Certificate (HSC)</h3>
+                  <div class="education-meta">
+                    <span class="education-institution">
+                      <ion-icon name="graduated-outline"></ion-icon>
+                      Science Group
+                    </span>
+                    <span class="education-period">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      Completed: 2021
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="education-description">
+                Advanced level education focusing on Physics, Chemistry, Mathematics, and Biology with emphasis on advanced concepts in electronics and mathematical foundations crucial for engineering studies.
+              </p>
+              <div class="education-subjects">
+                <span class="subject-tag">Physics</span>
+                <span class="subject-tag">Chemistry</span>
+                <span class="subject-tag">Mathematics</span>
+                <span class="subject-tag">Biology</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- Secondary School Certificate -->
+          <li class="education-card">
+            <div class="education-content">
+              <div class="education-header">
+                <div class="education-icon-wrapper">
+                  <ion-icon name="document-outline"></ion-icon>
+                </div>
+                <div class="education-title-group">
+                  <h3 class="education-title">Secondary School Certificate (SSC)</h3>
+                  <div class="education-meta">
+                    <span class="education-institution">
+                      <ion-icon name="graduated-outline"></ion-icon>
+                      Science Group
+                    </span>
+                    <span class="education-period">
+                      <ion-icon name="calendar-outline"></ion-icon>
+                      Completed: 2019
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="education-description">
+                Strong foundation in science subjects with comprehensive understanding of fundamental concepts. Active participation in science clubs, academic competitions, and extracurricular scientific activities.
+              </p>
+              <div class="education-subjects">
+                <span class="subject-tag">Science Subjects</span>
+                <span class="subject-tag">Mathematics</span>
+                <span class="subject-tag">Laboratory Practical</span>
+                <span class="subject-tag">Project Work</span>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+    </article>
+
+    <!-- PORTFOLIO -->
+    <article class="portfolio" data-page="portfolio">
+      <header><h2 class="h2 article-title">Projects</h2></header>
+      <section class="projects">
+        <ul class="project-grid">
+          <li class="project-card-item">
+            <div class="project-card">
+              <figure class="project-banner">
+                <div class="project-icon">
+                  <ion-icon name="cube-outline"></ion-icon>
+                </div>
+              </figure>
+              <div class="project-content">
+                <div class="project-category">
+                  <span class="project-tag">Embedded Systems</span>
+                  <span class="project-tag">Arduino</span>
+                </div>
+                <h3 class="project-title">Digital Elevator System</h3>
+                <p class="project-description">An intelligent elevator control system with advanced logic for efficient floor management and user interaction.</p>
+                <div class="project-footer">
+                  <a href="#" class="project-link">
+                    <span>View Details</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-card-item">
+            <div class="project-card">
+              <figure class="project-banner">
+                <div class="project-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+              </figure>
+              <div class="project-content">
+                <div class="project-category">
+                  <span class="project-tag">Web Development</span>
+                  <span class="project-tag">Full Stack</span>
+                </div>
+                <h3 class="project-title">QuantumLink-An Broadband ISP Website</h3>
+                <p class="project-description">A modern, responsive broadband internet service provider website built with HTML, CSS, JavaScript, and PHP for dynamic functionality.</p>
+                <div class="project-footer">
+                  <a href="#" class="project-link">
+                    <span>View Details</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-card-item">
+            <div class="project-card">
+              <figure class="project-banner">
+                <div class="project-icon">
+                  <ion-icon name="pulse-outline"></ion-icon>
+                </div>
+              </figure>
+              <div class="project-content">
+                <div class="project-category">
+                  <span class="project-tag">Circuit Design</span>
+                  <span class="project-tag">Signal Processing</span>
+                </div>
+                <h3 class="project-title">Analog Audio Spectrum Analyzer</h3>
+                <p class="project-description">Design and implementation of an analog audio spectrum analyzer circuit for real-time frequency analysis and visualization of audio signals.</p>
+                <div class="project-footer">
+                  <a href="#" class="project-link">
+                    <span>View Details</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="project-card-item">
+            <div class="project-card">
+              <figure class="project-banner">
+                <div class="project-icon">
+                  <ion-icon name="card-outline"></ion-icon>
+                </div>
+              </figure>
+              <div class="project-content">
+                <div class="project-category">
+                  <span class="project-tag">IoT</span>
+                  <span class="project-tag">ESP32</span>
+                  <span class="project-tag">RFID</span>
+                </div>
+                <h3 class="project-title">Smart Attendance System</h3>
+                <p class="project-description">An IoT-based smart attendance system using ESP32 microcontroller with RFID technology for automated attendance tracking and management.</p>
+                <div class="project-footer">
+                  <a href="https://github.com/Kowshik08004/ETE-320-project" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <span>View Details</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
       </section>
     </article>
 
-    <!-- RESUME -->
-    <article class="resume" data-page="resume">
-      <header><h2 class="h2 article-title">Resume</h2></header>
-
-      <section class="timeline">
-        <div class="title-wrapper">
-          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
-          <h3 class="h3">Education</h3>
+    <!-- RESEARCH -->
+    <article class="research" data-page="research">
+      <header><h2 class="h2 article-title">Research Publications</h2></header>
+      
+      <!-- Progress Notice -->
+      <div class="research-notice">
+        <div class="notice-icon">
+          <ion-icon name="time-outline"></ion-icon>
         </div>
+        <div class="notice-content">
+          <h4 class="notice-title">Work in Progress</h4>
+          <p class="notice-text">Research publications and papers are currently being prepared and will be updated here soon.</p>
+        </div>
+      </div>
 
-        <ol class="timeline-list">
-          <li class="timeline-item">
-            <h4 class="h4 timeline-item-title">B.Sc. in ETE</h4>
-            <span>2022 – Present</span>
-            <p>Chittagong University of Engineering & Technology</p>
+      <!-- Temporarily commented out research cards
+      <section class="projects">
+        <ul class="research-grid">
+          <li class="research-card-item">
+            <div class="research-card">
+              <div class="research-header">
+                <div class="research-icon">
+                  <ion-icon name="flask-outline"></ion-icon>
+                </div>
+                <span class="research-badge">Research Area</span>
+              </div>
+              <div class="research-content">
+                <h3 class="research-title">Semiconductor Device Design</h3>
+                <p class="research-description">Exploring advanced semiconductor materials and device architectures for next-generation electronic systems and integrated circuits.</p>
+                <div class="research-topics">
+                  <span class="topic-tag">VLSI</span>
+                  <span class="topic-tag">Microelectronics</span>
+                  <span class="topic-tag">IC Design</span>
+                </div>
+              </div>
+            </div>
           </li>
-        </ol>
+
+          <li class="research-card-item">
+            <div class="research-card">
+              <div class="research-header">
+                <div class="research-icon">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </div>
+                <span class="research-badge">Research Area</span>
+              </div>
+              <div class="research-content">
+                <h3 class="research-title">Cybersecurity Systems</h3>
+                <p class="research-description">Investigating security protocols and encryption methods for protecting embedded systems and telecommunication networks.</p>
+                <div class="research-topics">
+                  <span class="topic-tag">Network Security</span>
+                  <span class="topic-tag">Cryptography</span>
+                  <span class="topic-tag">IoT Security</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="research-card-item">
+            <div class="research-card">
+              <div class="research-header">
+                <div class="research-icon">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+                </div>
+                <span class="research-badge">Research Area</span>
+              </div>
+              <div class="research-content">
+                <h3 class="research-title">Embedded Systems & IoT</h3>
+                <p class="research-description">Developing intelligent embedded solutions and IoT frameworks for real-time data processing and smart system applications.</p>
+                <div class="research-topics">
+                  <span class="topic-tag">Microcontrollers</span>
+                  <span class="topic-tag">Real-time Systems</span>
+                  <span class="topic-tag">Smart Devices</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="research-card-item">
+            <div class="research-card">
+              <div class="research-header">
+                <div class="research-icon">
+                  <ion-icon name="radio-outline"></ion-icon>
+                </div>
+                <span class="research-badge">Research Area</span>
+              </div>
+              <div class="research-content">
+                <h3 class="research-title">Telecommunication Networks</h3>
+                <p class="research-description">Studying advanced communication protocols, signal processing techniques, and network optimization for modern telecommunication systems.</p>
+                <div class="research-topics">
+                  <span class="topic-tag">5G/6G</span>
+                  <span class="topic-tag">Signal Processing</span>
+                  <span class="topic-tag">Network Design</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
+      -->
     </article>
 
-    <!-- PORTFOLIO -->
-    <article class="portfolio" data-page="portfolio">
-      <header><h2 class="h2 article-title">Portfolio</h2></header>
-      <section class="projects">
-        <p style="opacity:.7">Projects will be listed here.</p>
+    <!-- CERTIFICATIONS -->
+    <article class="certifications" data-page="certifications">
+      <header><h2 class="h2 article-title">Certifications</h2></header>
+      
+      <section class="certifications-section">
+        <ul class="certifications-grid">
+          
+          <!-- Certificate 1 -->
+          <li class="certificate-card">
+            <div class="certificate-content">
+              <h3 class="certificate-title">Engineering Design & Analysis with MATLAB</h3>
+              <div class="certificate-meta">
+                <span class="certificate-issuer">
+                  <ion-icon name="business-outline"></ion-icon>
+                  IICT, CUET | EDGE Project
+                </span>
+                <span class="certificate-date">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  Dec 2024 – Feb 2025
+                </span>
+              </div>
+              <p class="certificate-description">
+                Successfully completed an intensive 80-hour certified training program in Engineering Design & Analysis with MATLAB, 
+                conducted by the Institute of Information and Communication Technology (IICT), Chittagong University of Engineering & Technology, 
+                under the EDGE Project of Bangladesh Computer Council (ICT Division). Gained hands-on proficiency in MATLAB for engineering 
+                problem-solving, simulation workflows, data analysis techniques, and practical design methodologies essential for modern 
+                engineering applications.
+              </p>
+              <div class="certificate-skills">
+                <span class="cert-tag">MATLAB</span>
+                <span class="cert-tag">Simulation</span>
+                <span class="cert-tag">Data Analysis</span>
+                <span class="cert-tag">Engineering Design</span>
+              </div>
+              <a href="assets/certificates/matlab-certificate.pdf" target="_blank" rel="noopener noreferrer" class="certificate-download-btn">
+                <ion-icon name="download-outline"></ion-icon>
+                <span>Download Certificate</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Certificate 2 -->
+          <li class="certificate-card">
+            <div class="certificate-content">
+              <h3 class="certificate-title">International Webinar on Recent Trends in Chemistry & Chemical Biology</h3>
+              <div class="certificate-meta">
+                <span class="certificate-issuer">
+                  <ion-icon name="business-outline"></ion-icon>
+                  Vijaygarh Jyotish Ray College, Kolkata
+                </span>
+                <span class="certificate-date">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  One-Day Webinar
+                </span>
+              </div>
+              <p class="certificate-description">
+                Participated in a one-day international webinar on "Recent Trends in Chemistry & Chemical Biology", 
+                organized by the Department of Chemistry and IQAC of Vijaygarh Jyotish Ray College, Kolkata. 
+                Gained international academic exposure and enhanced interdisciplinary scientific awareness through 
+                engagement with cutting-edge research trends in chemical sciences. This experience fostered a broader 
+                understanding of emerging interdisciplinary applications relevant to electronics and materials science.
+              </p>
+              <div class="certificate-skills">
+                <span class="cert-tag">International Exposure</span>
+                <span class="cert-tag">Chemistry</span>
+                <span class="cert-tag">Interdisciplinary</span>
+              </div>
+              <a href="assets/certificates/chemistry-certificate.pdf" target="_blank" rel="noopener noreferrer" class="certificate-download-btn">
+                <ion-icon name="download-outline"></ion-icon>
+                <span>Download Certificate</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- Certificate 3 -->
+          <li class="certificate-card">
+            <div class="certificate-content">
+              <h3 class="certificate-title">Professional Certificate</h3>
+              <div class="certificate-meta">
+                <span class="certificate-issuer">
+                  <ion-icon name="business-outline"></ion-icon>
+                  IEEE CUET Student Branch
+                </span>
+                <span class="certificate-date">
+                  <ion-icon name="person-outline"></ion-icon>
+                  Kowshik Chowdhury
+                </span>
+              </div>
+              <p class="certificate-description">
+                Officially issued personal academic and participation record maintained for documentation and verification purposes. 
+                This certificate serves as formal acknowledgment of professional development activities and academic engagement 
+                throughout my educational journey in Electronics and Telecommunication Engineering.
+              </p>
+              <div class="certificate-skills">
+                <span class="cert-tag">IEEE</span>
+                <span class="cert-tag">Student Branch</span>
+                <span class="cert-tag">Verified</span>
+              </div>
+              <a href="assets/certificates/ieee-certificate.pdf" target="_blank" rel="noopener noreferrer" class="certificate-download-btn">
+                <ion-icon name="download-outline"></ion-icon>
+                <span>Download Certificate</span>
+              </a>
+            </div>
+          </li>
+
+        </ul>
       </section>
     </article>
 
