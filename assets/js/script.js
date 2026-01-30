@@ -132,3 +132,43 @@ navLinks.forEach(link => {
     window.scrollTo(0, 0);
   });
 });
+
+/* ==================================================
+   THEME TOGGLE
+================================================== */
+const themeToggleBtn = document.querySelector("[data-theme-toggle]");
+const themeIcon = document.querySelector("[data-theme-icon]");
+const themeLabel = document.querySelector("[data-theme-label]");
+
+const applyTheme = (mode) => {
+  const isLight = mode === "light";
+  document.body.classList.toggle("light-mode", isLight);
+
+  if (themeToggleBtn) {
+    themeToggleBtn.setAttribute(
+      "aria-label",
+      isLight ? "Switch to dark mode" : "Switch to light mode"
+    );
+    themeToggleBtn.setAttribute("aria-pressed", String(isLight));
+  }
+
+  if (themeIcon) {
+    themeIcon.setAttribute("name", isLight ? "moon-outline" : "sunny-outline");
+  }
+
+  if (themeLabel) {
+    themeLabel.textContent = isLight ? "Dark" : "Light";
+  }
+};
+
+const storedTheme = localStorage.getItem("theme");
+if (storedTheme === "light") {
+  applyTheme("light");
+}
+
+themeToggleBtn?.addEventListener("click", () => {
+  const isLightNow = document.body.classList.contains("light-mode");
+  const nextTheme = isLightNow ? "dark" : "light";
+  applyTheme(nextTheme);
+  localStorage.setItem("theme", nextTheme);
+});

@@ -102,6 +102,9 @@
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
+  /* component tokens */
+  --navbar-bg: hsla(240, 1%, 17%, 0.75);
+
   /**
    * transition
    */
@@ -109,6 +112,131 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 
+}
+
+body.light-mode {
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(210, 20%, 98%) 3%,
+    hsl(210, 15%, 96%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right,
+    hsla(210, 25%, 99%, 0.95) 0%,
+    hsla(210, 20%, 98%, 0.95) 100%
+  ), hsl(210, 20%, 98%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right,
+    hsl(200, 80%, 55%) 0%,
+    hsla(200, 80%, 55%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg,
+    hsla(200, 80%, 55%, 0.15) 0%,
+    hsla(200, 80%, 55%, 0) 59.86%
+  ), hsl(210, 20%, 98%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(210, 15%, 85%) 0%,
+    hsla(210, 15%, 85%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right,
+    hsl(200, 85%, 45%),
+    hsl(195, 85%, 45%)
+  );
+  --orange-yellow-crayola: hsl(200, 80%, 50%);
+  --vegas-gold: hsl(200, 65%, 45%);
+
+  --jet: hsl(210, 15%, 85%);
+  --onyx: hsl(210, 20%, 93%);
+  --eerie-black-1: hsl(210, 20%, 98%);
+  --eerie-black-2: hsl(0, 0%, 100%);
+  --smoky-black: hsl(210, 20%, 97%);
+  --white-1: hsl(220, 20%, 20%);
+  --white-2: hsl(220, 20%, 15%);
+  --light-gray: hsl(220, 15%, 35%);
+  --light-gray-70: hsla(220, 15%, 35%, 0.75);
+
+  --shadow-1: 0 8px 24px hsla(210, 30%, 30%, 0.1);
+  --shadow-2: 0 16px 30px hsla(210, 30%, 30%, 0.12);
+  --shadow-3: 0 16px 40px hsla(210, 30%, 30%, 0.14);
+  --shadow-4: 0 25px 50px hsla(210, 30%, 30%, 0.12);
+  --shadow-5: 0 24px 80px hsla(210, 30%, 30%, 0.14);
+
+  --navbar-bg: hsla(0, 0%, 98%, 0.9);
+}
+
+/* Light Mode Specific Hover Fixes */
+body.light-mode .skill-card:hover::before,
+body.light-mode .project-card:hover::before {
+  background: linear-gradient(
+    to bottom right,
+    hsla(210, 30%, 97%, 0.98) 0%,
+    hsla(210, 25%, 95%, 0.98) 100%
+  );
+}
+
+body.light-mode .skill-card:hover {
+  box-shadow: 0 10px 30px hsla(200, 80%, 50%, 0.2);
+}
+
+body.light-mode .project-card:hover {
+  box-shadow: 0 20px 40px hsla(200, 80%, 50%, 0.25);
+}
+
+body.light-mode .form-btn {
+  color: hsl(0, 0%, 0%);
+  font-weight: var(--fw-500);
+}
+
+body.light-mode .education-card:hover .education-title,
+body.light-mode .certificate-card:hover .certificate-title {
+  color: hsl(200, 85%, 40%);
+}
+
+body.light-mode .education-card:hover,
+body.light-mode .certificate-card:hover {
+  box-shadow: 0 10px 40px hsla(200, 80%, 50%, 0.2);
+}
+
+body.light-mode .education-card:hover .coursework-tag,
+body.light-mode .education-card:hover .subject-tag,
+body.light-mode .certificate-card:hover .cert-tag {
+  background: hsla(200, 80%, 50%, 0.12);
+  color: hsl(200, 85%, 40%);
+  border-color: hsla(200, 80%, 50%, 0.3);
+}
+
+body.light-mode .research-notice::before {
+  background: linear-gradient(
+    to right,
+    hsla(210, 25%, 97%, 0.98) 0%,
+    hsla(210, 20%, 96%, 0.98) 100%
+  );
+}
+
+body.light-mode .research-notice:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px hsla(200, 80%, 50%, 0.15);
+  transition: all 0.3s ease;
+}
+
+body.light-mode .certificate-download-btn {
+  color: hsl(0, 0%, 0%);
+  font-weight: var(--fw-500);
+}
+
+body.light-mode .certificate-download-btn:hover {
+  box-shadow: 0 5px 20px hsla(200, 80%, 50%, 0.25);
+}
+
+body.light-mode .skill-tag:hover,
+body.light-mode .cert-tag:hover {
+  background: hsla(200, 80%, 50%, 0.12);
+  color: hsl(200, 85%, 40%);
+  border-color: hsla(200, 80%, 50%, 0.3);
+  box-shadow: 0 4px 12px hsla(200, 80%, 50%, 0.15);
 }
 
 
@@ -459,7 +587,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--navbar-bg);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -486,6 +614,24 @@ main {
 .navbar-link:focus { color: var(--light-gray-70); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
+
+.theme-toggle-item {
+  display: flex;
+}
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.theme-toggle-icon {
+  font-size: 16px;
+}
+
+.theme-toggle-text {
+  font-size: var(--fs-8);
+}
 
 
 
